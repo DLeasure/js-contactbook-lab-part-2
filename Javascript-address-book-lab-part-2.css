@@ -63,7 +63,3 @@ body {
     transform: translateX(-50%);
     transform: translateY(50%);
 }
-
-#index {
-    background: red;
-}

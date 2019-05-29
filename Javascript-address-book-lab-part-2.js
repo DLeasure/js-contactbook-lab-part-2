@@ -44,6 +44,7 @@ class AddressBook {
             
             let deleteButton = document.createElement("button");
             deleteButton.setAttribute('class', 'delete-button material-icons');
+            // deleteButton.setAttribute('')
             deleteButton.innerHTML = "delete"
             deleteButton.addEventListener('click', function(e) {
                 myAddressBook.contacts.splice(index, 1);
@@ -71,4 +72,4 @@ document.getElementById('new-contact-info').addEventListener("submit", function(
 
 myAddressBook.printContactsAtEndOfHTML();
 
-myAddressBook.print();
+// myAddressBook.print();
