@@ -1,0 +1,64 @@
+#new-contact-info {
+    background: rgba(128, 128, 128, 0.5);
+    color: white;
+    width: 60%;
+    align-items: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.form-row {
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 90%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+#my-contacts {
+    align-items: center;
+}
+
+.button {
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+#address-book {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* position: relative; */
+}
+
+.contact {
+    width: 25%;
+    box-sizing: border-box;
+    margin: 30px;
+    background: rgb(194, 194, 194);
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.delete-button {
+    border-radius: 50px;
+    border: 1px solid black;
+    height: 40px;
+    width: 40px; 
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    transform: translateX(-50%);
+    transform: translateY(50%);
+}
+
+#index {
+    background: red;
+}
