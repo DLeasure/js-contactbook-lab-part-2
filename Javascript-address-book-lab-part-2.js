@@ -22,6 +22,7 @@ class AddressBook {
 
     deleteContactAt(index) {
         this.contacts.splice(index,1);
+        printContactsAtEndOfHTML();
     }
 
     print() {
@@ -54,6 +55,11 @@ class AddressBook {
             deleteButton.setAttribute('class', 'delete-button material-icons');
             // deleteButton.setAttribute('id', this.contacts[index]["name"]);
             deleteButton.innerHTML = "delete"
+            deleteButton.addEventListener('click', function(e) {
+                // console.log("pressed " + index);
+                e.preventDefault();
+                myAddressBook.deleteContactAt(index);
+            })
             
             newDiv.appendChild(deleteButton);
             let addressBookDiv = document.getElementById("address-book");
@@ -75,13 +81,13 @@ document.getElementById('new-contact-info').addEventListener("submit", function(
     myAddressBook.printContactsAtEndOfHTML();
 })
 
-let deleteLink = document.querySelectorAll('delete-button');
-for (var index = 0; index < deleteLink.length; index++) {
-    deleteLink[index].addEventListener('click', function(e) {
-        console.log("pressed");
-        e.preventDefault();
-    })
-}
+// let deleteLink = document.querySelectorAll('.delete-button');
+// for (var index = 0; index < deleteLink.length; index++) {
+//     deleteLink[index].addEventListener('click', function(e) {
+//         console.log("pressed");
+//         e.preventDefault();
+//     })
+// }
 
 myAddressBook.printContactsAtEndOfHTML();
 
