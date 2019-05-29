@@ -1,5 +1,10 @@
+body {
+    background-image: url("https://images.pexels.com/photos/683039/pexels-photo-683039.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-color: brown;
+}
+
 #new-contact-info {
-    background: rgba(128, 128, 128, 0.5);
+    background: rgba(128, 128, 128, 0.8);
     color: white;
     width: 60%;
     align-items: center;
